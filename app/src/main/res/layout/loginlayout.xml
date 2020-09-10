@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_margin="@dimen/dimens"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/im"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/im"
+        android:src="@drawable/login"/>
+        <TextView
+            android:id="@+id/tv"
+            android:layout_below="@id/im"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:textSize="@dimen/dimens"
+            android:gravity="center"
+            android:textColor="@color/colorb"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etusername"
+            android:layout_below="@id/tv"
+            android:textColorHint="@color/colorb"
+            android:hint="@string/enter_the_username"
+            android:textSize="@dimen/dimen"
+            android:textColor="@color/colorb"
+            android:inputType="text"
+            android:layout_margin="@dimen/activity_vertical_margin"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etpassword"
+            android:textColor="@color/colorb"
+            android:hint="Enter the Password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/colorb"
+            android:layout_below="@id/etusername"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/dimen"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/etpassword">
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="27dp"
+            android:textColor="@color/colorb"
+            android:background="@color/colorbutton"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:text="@string/submit1" />
+        <Button
+            android:id="@+id/btnregister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnlogin"
+            android:layout_margin="27dp"
+            android:onClick="register"
+            android:textColor="@color/colorb"
+            android:background="@color/co"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:text="@string/submit2" />
+    </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
